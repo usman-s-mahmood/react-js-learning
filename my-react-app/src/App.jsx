@@ -16,6 +16,7 @@ import UpdaterFunction from "./UpdaterFunction.jsx"
 import UpdateState from "./UpdateState.jsx"
 import UpdatingArrayState from "./UpdatingArrayState.jsx"
 import UpdatingArrayOfObjectsState from './UpdatingArrayOfObjectsState.jsx'
+import UseEffect from "./UseEffect.jsx"
 
 function App() {
   const fruits = [
@@ -62,6 +63,7 @@ function App() {
       <UpdateState />
       <UpdatingArrayState />
       <UpdatingArrayOfObjectsState />
+      <UseEffect />
       <Footer />
     </>
   );

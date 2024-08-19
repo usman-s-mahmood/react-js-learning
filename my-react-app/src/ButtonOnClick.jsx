@@ -1,20 +1,11 @@
 
 function Button() {
-    // let count = 0;
-    // const handleClick = (name) => {
-    //     count += 1;
-    //     console.log(
-    //         `${name} clicked me ${count} times`
-    //     );
-    // }
-    // const handleClick2 = (name) => console.log(`stop clicking ${name}`);
-    const handleClick = (e) => {
-        e.target.textContent = 'Button is clicked'
-    }
+    const handleClick = () => console.log('clicked');
+    const handleClick2 = (name) => console.log(`stop clicking ${name}`)
     return (
         <>
-           <button onDoubleClick={(e) => handleClick(e)}>Click me (Button On Click)</button> 
-        </>
+           <button onClick={() => handleClick2('name')}>Click me</button> 
+        </> // use anonymous functions to call parameterized functions
     );
 }
 
